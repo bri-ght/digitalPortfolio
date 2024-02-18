@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>230185B - Digital Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href='index.css' rel='stylesheet'>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .article{
+        width:100%;
+        border-radius:5px;
+    }
+    .image{
+        width: 467px;
+        height:400px;
+        border-radius:5px;
+        font-size:8rem;
+        margin-bottom: 20px;
+    &.right{
+        float:right;
+        margin-left:20px;
+    }
+    &.left{
+        float:left;
+        margin-right:30px;
+    }
+    }
+    .content{
+        padding: 20px 0px;
+    }
+
+    .group{
+        &:before,
+        &:after {
+            content: "";
+            display: table;
+        } 
+        &:after {
+            clear: both;
+        }
+    }
+</style>
+<body class="dotted">
+    <div class="defaultContainer">
+        <div id="mainFold">
+          <header class="header">
+            <h3>DERRON FOO</h3>
+            <nav class="navbar">
+              <a href="about.html" class="nav-link"><h3>ABOUT ME</h3></a>
+              <a href="index.html#projects" class="nav-link"><h3>PROJECTS</h3></a>
+            </nav>
+          </header>
+          <article class="article group">
+            <img class="image right" src="/images/greenPlan.png" alt="Image" style="position: relative; top: 15px;height: auto; max-width: 300px; aspect-ratio: 1/1;">
+            <section class="content">
+              <h2 class="headline">Visual Analytics Case Study - Resilient Future</h2>
+              <h3>SKILLSETS: <span class="bold">Power BI</span>, <span class="bold">Excel</span>, <span class="bold">Effective Communication</span></h3>
+              <h3>SCOPE: 
+                The assignment is about creating a visual analytics project as a team effort. It involves gathering and analyzing the business needs of varied stakeholders, employing statistical models to make strategic decisions, preparing data with ETL (Extract, Transform, Load) processes, and crafting visualizations to clearly communicate business insights to a diverse audience. By completing this project, participants will learn to effectively gather requirements, use storytelling for user requirements, analyze and prepare data, and work together to create real-time visual analytics for decision support.</h3>
+              <h3>The area of focus that I was allocated with was the "Resilient Future" pilar of the Green Plan 2030.</h3>
+              <h3>Click <a href="https://github.com/Detecller/PowerBI_Projects/blob/main/SG_Green_Plan/SG_Green_Plan_Report.pbix">here</a> to download the Power BI file and <a href="https://github.com/Detecller/PowerBI_Projects/blob/main/SG_Green_Plan/Final%20Report.pdf">here</a> to download the report.</h3>
+            </section>
+          </article>
+          <article class="article group">
+            <img class="image left" src="/images/environmentalAgency.jpg" alt="Image">
+            <section class="content">
+              <br><br><br>
+              <h2 class="headline">Work Process ( Gaining Business Requirements )</h2>
+              <h3>First came the gathering of user requirements from key stakeholders, naturally the organization in charge of the pillar that I was working on was my main source to gather requirements.</h3>
+              <h3>At the main office of the Ministry of Sustainability and the Environment, I interviewed, exercised empathy study and gained key business requirements for the visualisations I had to do later on.</h3>
+            </section>
+          </article>
+          <article class="article group">
+            <img class="image right" src="/images/powerQuery.jpg" alt="Image" style="height: auto; max-width: 300px; aspect-ratio: 1/1;">
+            <section class="content">
+              <br><br><br>
+              <h2>Work Process ( Data Gathering and Preperation )</h2>
+              <h3>After gathering business requirements comes gathering and preparing data, data had to be scoured through reliable sources, specifically sources from Singapore's government websites as the dataset scope was only in Singapore.</h3>
+              <h3>Data preperation then had to be done through the Power Query Function in Excel to mitgate future troubles during integration with other members.</h3>
+            </section>
+          </article>
+          <article class="article group">
+            <img class="image left" src="/images/drillthrough.png" alt="Image" style="width: auto; aspect-ratio: 1.65;">
+            <section class="content">
+              <h2 class="headline">Work Process ( Visualisation Development )</h2>
+              <h3>With all the preparation done, it was time to develop visualisations in Power BI that give key insights with the given data and requirements.</h3>
+              <h3>From my visualisations, stakeholders could conveniently access Singapore's progress towards their stated goals like 1 Million Trees Planted by 2030 but also convieniently delve deeper into the sustainability topics to understand better of each respective topic.</h3>
+              <h3>One such insight would be a key factor contributing to food stability and security, from 2021 Q4 to 2022 Q1 there was a sudden dip in a local production of "Hen Shell Eggs" of 3%, this could be explained through a line visual found in the drill through page which shows a low farm count for "Hen Shell Eggs".</h3>
+              <br>
+              <h3>A disease outbreak occurred at one of the "Hen Shell Egg" farms during this time period. Since we could infer that there was a low farm count from one of my visuals aforementioned, a low farm count means a high dependency of each farm ( as farm quantity * farm quality = total produce ) meaning that the potential produce risk loss is high for each farm, explaining why the disease outbreak aformentioned had a great impact to Singapore's local production and poses a risk to food stability.</h3>
+            </section>
+          </article>
+          </div>
+        </div>
+        <div class="social-menu" style="position: relative; top: -15px;">
+          <ul>
+              <li><a href="https://github.com/bri-ght" target="blank"><i class="fab fa-github"></i></i></a></li>
+              <li><a href="https://www.instagram.com/__.hara/" target="blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/derron-foo-xi-wei-a90896298/" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://codepen.io/bright-whitora"><i class="fab fa-codepen" target="blank"></i></a></li>
+          </ul>
+      </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+</html>
